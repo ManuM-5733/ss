@@ -1,0 +1,17 @@
+show dbs
+use maydb
+db.student.insertOne({name:"manu",})
+db.student.insertOne({name:"manu",age:69,course:"cs"})
+show collections
+db.student.insertMany([{name:"manu",age:69,course:"cs"},{name:"dhura",cc:"njk",bc:"uu"}])
+db.student.find()
+db.student.find({name:"manu"})
+db.student.insertMany([{name:"chinnu",age:69,course:"cs"},{name:"dhura",cc:"njk",bc:"uu"}])
+db.student.find()
+db.student.findOne({name:"manu"})
+db.student.findOne()
+db.student.updateOne({name:"manu"},{$set:{age:88}})
+db.student.deleteOne({name:"manu"})
+db.student.find()
+db.student.updateOne({name:"chinnu"},{$set:{age:88}})
+db.student.deleteOne({name:"chinnu"})
